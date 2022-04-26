@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hoạt động của đèn pin</title>
+</head>
+<body>
+<script>
+    class Battery {
+        enegy
+        constructor(enegy) {
+            this.enegy=enegy;
+        }
+        downEnegy(){
+            this.enegy--;
+        }
+    }
+    class FlashLamp {
+        status
+        Battery
+
+        constructor(status,Battery) {
+            this.status = status;
+            this.Battery=Battery;
+        }
+        turnOn(){
+            this.status=true;
+        }
+        turnOf(){
+            this.status=false;
+        }
+        light(){
+            this.Battery.downEnegy();
+        }
+
+    }
+</script>
+</body>
+</html>

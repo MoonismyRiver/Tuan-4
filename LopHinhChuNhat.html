@@ -11,13 +11,22 @@
         chieurong
 
         constructor(chieudai, chieurong) {
-            this.chuvi =  (chieudai + chieurong ) * 2
-            this.dientich = chieudai * chieurong
+            this.chieudai = chieudai;
+            this.chieurong = chieurong;
         }
+
+        tinhChuVi() {
+            return (this.chieudai + this.chieurong) * 2;
+        }
+
+        tinhDienTich() {
+            return (this.chieudai * this.chieurong);
+        }
+
     }
 
     let retangle = new Rectangle(6, 6);
-    alert(retangle.chuvi);
+    console.log(retangle.tinhDienTich())
 </script>
 </body>
 </html>

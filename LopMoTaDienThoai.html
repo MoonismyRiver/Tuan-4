@@ -3,8 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <title>Mô tả điện thoại</title>
+    <style>
+        button, textarea {
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
+<div>
+    <table>
+        <tr>
+            <td colspan="3">
+                <textarea rows="5" id="massage"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button>Send</button>
+            </td>
+            <td>
+                <button>MemoryDaGui</button>
+            </td>
+            <td>
+                <button>On</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button>UpBatterry</button>
+            </td>
+            <td>
+                <button>MemoryDaNhan</button>
+            </td>
+            <td>
+                <button>Off</button>
+            </td>
+        </tr>
+    </table>
+</div>
 
 </body>
 </html>
+<script>
+    function send(phone1, phone2) {
+        phone1.message = document.getElementById("massage").value;
+        phone1.send(phone2);
+    }
+
+    function turnOn(phone) {
+        phone.turnOn();
+    }
+
+    function turnOff(phone) {
+        phone.turnOff();
+    }
+
+    function displayDen(phone) {
+
+    }
+</script>

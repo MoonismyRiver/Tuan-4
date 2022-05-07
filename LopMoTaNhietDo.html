@@ -5,8 +5,11 @@
     <title>Lớp mô tả nhiệt độ</title>
 </head>
 <body>
+    <button onclick="nhietdo.chuyenK()">Chuyển sang độ K: </button>
+    <button onclick="nhietdo.chuyenF()">Chuyển sang độ F: </button>
+
 <script>
-    class Nhietdo {
+        class Nhietdo {
         triso
 
         constructor(triso) {
@@ -20,9 +23,9 @@
             alert( ((this.triso)+273)+' độ K')
     }}
 
-    let nhietdo = new Nhietdo(25);
-    console.log(nhietdo)
-   nhietdo.chuyenK();
+    let a= +prompt('nhập nhiệt độ :')
+    let nhietdo = new Nhietdo(a);
+
 
 </script>
 </body>
